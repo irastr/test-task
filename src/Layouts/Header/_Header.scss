@@ -1,0 +1,47 @@
+.header {
+  background: $black;
+  padding: 15px 0px;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: $orange;
+  @include rem(30);
+}
+
+.header__column--right {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+// .nav {
+//   margin-right: 100px;
+// }
+
+.nav__list {
+  @include reset-list;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $white;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.header__search {
+  color: $white;
+}
